@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Tsbasic from "./ts/basicts";
+import TsMedium from "./ts/tsmedium";
 
-function App() {
+const App = () => {
+  const data = (data: string): string => {
+    return data;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Tsbasic /> */}
+      <TsMedium />
+      <h1>{data("concho ty ")}</h1>
+    </>
   );
-}
+};
 
 export default App;
