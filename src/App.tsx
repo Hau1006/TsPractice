@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Tsbasic from "./ts/basicts";
 import TsMedium from "./ts/tsmedium";
+import TsAdvance from "./ts/tsAdvance";
 
 const App = () => {
   const data = (data: string): string => {
@@ -12,7 +13,8 @@ const App = () => {
   return (
     <>
       {/* <Tsbasic /> */}
-      <TsMedium />
+      {/* <TsMedium /> */}
+      <TsAdvance />
       <h1>{data("concho ty ")}</h1>
     </>
   );
