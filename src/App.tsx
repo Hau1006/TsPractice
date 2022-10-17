@@ -1,19 +1,18 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Tsbasic from "./ts/basicts";
+import { fish, gods } from "./mocData/data";
+import { getDrinks } from "./object/objectFucntion/functionObject";
 import TsMedium from "./ts/tsmedium";
+import { boil } from "./utils/common/boil";
+import { min } from "./utils/min";
 
 const App = () => {
-  const data = (data: string): string => {
-    return data;
-  };
-
+  console.log(boil(gods, (a, b) => (a.power < b.power ? a : b)));
+  console.log(min(fish, (f) => f.weight));
   return (
     <>
       {/* <Tsbasic /> */}
-      <TsMedium />
-      <h1>{data("concho ty ")}</h1>
+      {/* <TsMedium /> */}
+      <h1>con cho ty</h1>
     </>
   );
 };
